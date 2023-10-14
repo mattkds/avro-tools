@@ -1,4 +1,4 @@
-ame: Publish package Avro Tool to Github Packages
+name: Publish package Avro Tool to Github Packages
 
 on:
   push:
