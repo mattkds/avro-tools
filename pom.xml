@@ -21,7 +21,7 @@
 
     <distributionManagement>
         <repository>
-            <id>mattkds-maven</id>
+            <id>github-mattkds-maven</id>
             <name>Maven Repo Mattkds</name>
             <url>https://maven.pkg.github.com/mattkds/avro-tools</url>
         </repository>
