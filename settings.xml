@@ -12,7 +12,7 @@
             <id>github</id>
             <repositories>
                 <repository>
-                    <id>github-mattkds-maven</id>
+                    <id>github</id>
                     <url>https://maven.pkg.github.com/mattkds/avro-tools</url>
                     <snapshots>
                         <enabled>true</enabled>
