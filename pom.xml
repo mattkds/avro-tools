@@ -11,7 +11,7 @@
     <groupId>fr.mattkds</groupId>
     <artifactId>avro-tools</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>avro-schema</name>
+    <name>avro-tools</name>
     <description>The Avro schema definitions for the Schema Registry Project</description>
     <properties>
         <java.version>17</java.version>
