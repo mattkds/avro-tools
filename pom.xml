@@ -58,7 +58,6 @@
                         </goals>
                         <configuration>
                             <sourceDirectory>${project.basedir}/avro</sourceDirectory>
-                            <outputDirectory>${project.build.directory}/generated/avro</outputDirectory>
                             <createSetters>false</createSetters>
                             <enableDecimalLogicalType>true</enableDecimalLogicalType>
                             <fieldVisibility>private</fieldVisibility>
@@ -75,7 +74,8 @@
                         <param>http://localhost:8081</param>
                     </schemaRegistryUrls>
                     <subjects>
-                        <order>${project.basedir}/avro/order_v1.avsc</order>
+                        <order>${project.basedir}/avro/V1/order.avsc</order>
+                        <order>${project.basedir}/avro/v2/order.avsc</order>
                     </subjects>
                     <outputDirectory/>
                 </configuration>

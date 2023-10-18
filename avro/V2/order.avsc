@@ -1,0 +1,13 @@
+{
+     "type": "record",
+     "namespace": "fr.mattkds.avro.event.V2",
+     "name": "Order",
+     "version": "2",
+     "fields": [
+        { "name": "order_id", "type": "string" },
+        { "name": "store_id", "type": "string" },
+        { "name": "amount", "type": "double" },
+        { "name": "currency", "type": "string" },
+        { "name": "article", "type": "string" }
+     ]
+}
