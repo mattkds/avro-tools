@@ -1,6 +1,6 @@
 {
      "type": "record",
-     "namespace": "fr.mattkds.avro.event.V2",
+     "namespace": "fr.mattkds.avro.event.v2",
      "name": "Order",
      "version": "2",
      "fields": [
