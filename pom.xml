@@ -10,15 +10,16 @@
     </parent>
     <groupId>fr.mattkds</groupId>
     <artifactId>avro-tools</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>avro-tools</name>
-    <description>The Avro schema definitions for the Schema Registry Project</description>
+    <description>Repository to manage avro schema and tools for kafka streaming application</description>
     <properties>
         <java.version>17</java.version>
         <avro.version>1.11.1</avro.version>
         <confluent.version>5.5.5</confluent.version>
     </properties>
 
+    <!-- Repository use to deploy maven package -->
     <distributionManagement>
         <repository>
             <id>github</id>
@@ -27,14 +28,7 @@
         </repository>
     </distributionManagement>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>confluent</id>
-            <name>Confluent</name>
-            <url>https://packages.confluent.io/maven/</url>
-        </pluginRepository>
-    </pluginRepositories>
-
+    <!-- Avro dependencies -->
     <dependencies>
         <dependency>
             <groupId>org.apache.avro</groupId>
@@ -43,6 +37,7 @@
         </dependency>
     </dependencies>
 
+    <!-- Plugin configuration -->
     <build>
         <plugins>
             <plugin>
@@ -65,25 +60,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>io.confluent</groupId>
-                <artifactId>kafka-schema-registry-maven-plugin</artifactId>
-                <version>${confluent.version}</version>
-                <configuration>
-                    <schemaRegistryUrls>
-                        <param>http://localhost:8081</param>
-                    </schemaRegistryUrls>
-                    <subjects>
-                        <order>${project.basedir}/avro/V1/order.avsc</order>
-                        <order>${project.basedir}/avro/v2/order.avsc</order>
-                    </subjects>
-                    <outputDirectory/>
-                </configuration>
-                <goals>
-                    <goal>register</goal>
-                </goals>
-            </plugin>
         </plugins>
     </build>
-
 </project>

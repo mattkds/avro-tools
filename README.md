@@ -1,5 +1,5 @@
 # avro-tools
-Repository to manage avro schema and tools for kafka streaming application
+Repository to manage avro schema and tools for kafka streaming application or microservices
 
 ## Introduction
 This repository contains all avro schema tools to manage and use Event from Kafka Cluster
